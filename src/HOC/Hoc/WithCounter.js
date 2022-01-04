@@ -8,7 +8,9 @@ const WithCounter = (WrappedCounter, number) => {
       setCounter(counter + number);
     };
     return (
-      <WrappedCounter counter={counter} increament={increament} {...props} />
+      <>
+        <WrappedCounter counter={counter} increament={increament} {...props} />
+      </>
     );
   };
 
